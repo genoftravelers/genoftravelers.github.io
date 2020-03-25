@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+    Name: Karma Dolkar
+    Date Created: 3/25/20
+    Most recent revision:
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+</head>
+<body>
+    <main>
+            <header>
+                    <h1> Karma Cafe</h1>
+                    <p>Get <em>INSTANT </em>Karma</p>
+        </header>
+      <hr/>
+<nav>
+        <a href = "home.html"> Home</a> 
+        <a href = "Contact.html">Contact</a>
+        <a href = "Menu.html"> Menu</a>
+</nav>
+<section>
+        <form action = "submit.html" method = "POST">
+                <label for = "Name">Name:</label> <br/>
+                <input type = "text" id="Name" name = "Name"> <br/>
+                <label for = "Email"> Email:</label> <br/>
+                <input type = "text" id="Email" name = "Email"> <br/>
+                <label for = "phone"> Phone Number:</label> <br/>
+                <input type = "text" id="phone" name = "phone"> <br/>
+        
+        
+        <label for="contact">Reason for Inquiry:</label><br />
+	        <select id="contact" name="contact">
+    	        <option value="default" selected>--Catering--</option>
+    	        <option value="Private party">Private party</option>
+    	        <option value="feed back">Feed Back</option>
+    	        <option value="other">Other</option>
+            </select>
+</section>
+<section>
+            <label for="info">Additional Information</label><br />
+                <textarea id="info" name="info"></textarea>
+                <input type="submit" name="submit" value="Submit">
+</section>
+<section>
+                <legend>Have you been to the restautant?</legend><br />
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">Yes</label><br />
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">No</label><br />
+                <br><br>
+</section>
+<section>
+        <legend>Best days to contact you.</legend><br />
+        <form action="/action_page.php">
+            <input type="checkbox" id="day1" name="day1" value="Monday">
+            <label for="vehicle1"> Monday</label><br>
+            <input type="checkbox" id="day2" name="day2" value="Tuesday">
+            <label for="vehicle2"> Tuesday</label><br>
+            <input type="checkbox" id="day3" name="day3" value="Wednesday">
+            <label for="vehicle1"> Wednesday</label><br>
+            <input type="checkbox" id="day4" name="day4" value="Thursday">
+            <label for="vehicle2"> Thursday</label><br>
+            <input type="checkbox" id="day5" name="day5" value="friday">
+            <label for="vehicle1"> Friday</label><br>
+            <input type="checkbox" id="day6" name="day6" value="Saturday">
+            <label for="vehicle2"> Saturday</label><br>
+            <input type="checkbox" id="day7" name="day7" value="Sunday">
+            <label for="vehicle3"> Sunday</label><br><br>
+            <input type="submit" value="Submit">
+          </form>
+</section>
+            <hr/>
+    <footer>
+        <hr>
+        <p>123 Smile Ave, WA, 12345</p>
+        <P>Phone # 123-456-7890</P>
+    </footer>
+    </main>
+</body>
+</html>
