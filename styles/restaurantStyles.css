@@ -1,0 +1,14 @@
+header, footer {
+    background-color: #D6C688;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+body {
+        background-color: #FBEBCB;
+        font-family: arial, helvetica, sans-serif;
+        color: #0d1f2d;
+        max-width: 900px;
+        margin: 0 auto;
+    }
