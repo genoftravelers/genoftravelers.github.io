@@ -3,7 +3,7 @@ header, footer {
     color: #fef9ff;
     height: 100px;
     text-align: center;
-    padding: 30px 10px 20px 10px;
+    padding: 30px 10px 30px 10px;
 }
 body {
         background-color: #FBEBCB;
@@ -11,4 +11,33 @@ body {
         color: #0d1f2d;
         max-width: 900px;
         margin: 0 auto;
+    }
+    nav a {
+        
+        /* color: #fef9ff; */
+        padding: 8px;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 20px;
+        width: 100px;
+        float: left;
+    }
+    nav a:hover {
+        background-color: #fef9ff;
+        /* color: #5b7d87;  */
+    }
+    nav a:active {
+        font-weight: bold;
+    }
+    nav a:visited {
+        color: #7E3D1E;
+    }
+    td p {
+        color:#7E3D1E ;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        color:#4E2C27;
     }
