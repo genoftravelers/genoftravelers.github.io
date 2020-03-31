@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Comfortaa|Indie+Flower&display=swap');
+
 header, footer {
     background-color: #D6C688;
     color: #fef9ff;
-    height: 100px;
+    /* height: 100px; */
     text-align: center;
     padding: 30px 10px 30px 10px;
 }
 body {
         background-color: #FBEBCB;
-        font-family: arial, helvetica, sans-serif;
+        font-family: 'Comfortaa', cursive;
         color: #0d1f2d;
         max-width: 900px;
         margin: 0 auto;
@@ -41,3 +43,12 @@ body {
         text-align: center;
         color:#4E2C27;
     }
+    nav .btn {
+        background-color: #D6C688;
+        color: #fef9ff; 
+        }
+@media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+        }

@@ -9,26 +9,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title><link href="../../styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <title>Contact</title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <link href="../../styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 
     <link rel="shortcut icon" type= "Images/png" href="../../Res:Images/Transparent-icon.png">
+    <style>
+    section{
+            text-align: center;
+    }
+    </style>
 </head>
 <body>
     <main>
-           
+        <div  class="jumbotron text-center">
             <header>
                     <h1> Karma Cafe</h1>
                     <p>Get your daily doze of <em>Karma </em></p>
         </header>
         <hr style="width: 100%; border: 2px solid #7E3D1E;" />
+
+
+<div class = "container">
+        
 <nav>
-        <a class = "navbar" href="http://genoftravelers.github.io/" > <img src = "../../Res:Images/Transparent-icon.png" width="100" height="100"></a>
-        <a class = "navbar" href = "https://genoftravelers.github.io/">Landing-Page</a> &nbsp;
-        <a class = "navbar" href = "../restaurantv2/restaurantv2.html"> Restaurant</a> &nbsp;
-        <a class = "navbar" href = "../restaurantv2/menuv2.html"> Menu</a> &nbsp;
-        <a class = "navbar" href = "../restaurantv2/contactv2.html">Contact</a> &nbsp;
+        <a href="http://genoftravelers.github.io/" > <img src = "../../Res:Images/Transparent-icon.png" width="100" height="100"></a>
+        <a class="btn badge-pill" href = "https://genoftravelers.github.io/">Landing P</a> &nbsp;
+        <a class="btn badge-pill" href = "../restaurantv2/restaurantv2.html"> Restaurant</a> &nbsp;
+        <a class="btn badge-pill" href = "../restaurantv2/menuv2.html"> Menu</a> &nbsp;
+        <a class="btn badge-pill" href = "../restaurantv2/contactv2.html">Contact</a> &nbsp;
 </nav>
-        <hr style="width: 100%; border: 2px solid #7E3D1E;" />
+
+        <!-- <hr style="width: 100%; border: 2px solid #7E3D1E;" /> -->
+        
 <section>
         <form action = "submit.html" method = "POST">
                 <label for = "Name">Name:</label> <br/>
@@ -64,22 +78,25 @@
         <legend>Best days to contact you.</legend><br />
         <form action="/action_page.php">
             <input type="checkbox" id="day1" name="day1" value="Monday">
-            <label for="vehicle1"> Monday</label><br>
+            <label for="vehicle1"> Mon</label><br>
             <input type="checkbox" id="day2" name="day2" value="Tuesday">
-            <label for="vehicle2"> Tuesday</label><br>
+            <label for="vehicle2"> Tue</label><br>
             <input type="checkbox" id="day3" name="day3" value="Wednesday">
-            <label for="vehicle1"> Wednesday</label><br>
+            <label for="vehicle1"> Wed</label><br>
             <input type="checkbox" id="day4" name="day4" value="Thursday">
-            <label for="vehicle2"> Thursday</label><br>
+            <label for="vehicle2"> Thu</label><br>
             <input type="checkbox" id="day5" name="day5" value="friday">
-            <label for="vehicle1"> Friday</label><br>
+            <label for="vehicle1"> Fri</label><br>
             <input type="checkbox" id="day6" name="day6" value="Saturday">
-            <label for="vehicle2"> Saturday</label><br>
+            <label for="vehicle2"> Sat</label><br>
             <input type="checkbox" id="day7" name="day7" value="Sunday">
-            <label for="vehicle3"> Sunday</label><br><br>
+            <label for="vehicle3"> Sun</label><br><br>
             <input type="submit" value="Submit">
           </form>
 </section>
+</div>
+</div>
+
             <hr/>
     <footer>
         <hr>
@@ -87,5 +104,10 @@
         <P>Phone # 123-456-7890</P>
     </footer>
     </main>
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
