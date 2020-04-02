@@ -14,6 +14,6 @@ function rollDice(numSides) {
     return Math.floor(Math.random() * numSides) + 1;
   }
    
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < numDice; i++) {
     console.log(rollDice(numSides));
   }
