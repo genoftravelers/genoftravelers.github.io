@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Name: Karma Dolkar
+    Date Created: 3/25/20
+    Most recent revision:
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <link href="../../styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" type= "Images/png" href="../../Res:Images/Transparent-icon.png">
+    <style>
+    section{
+            text-align: center;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+
+                <noscript><img class = "missingJS" src = "../../Res:Images/sorrypug.jpg" />This page is best viewed with JavaScript enabled.</noscript>
+        <div class="jumbotron text-center" >
+                <header >
+                        <h1> Karma Cafe</h1>
+                        <p>Get your daily doze of <em>Karma </em></p>
+                </header>
+        <hr style="width: 100%; border: 2px solid #7E3D1E;" />
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                        <a  href="http://genoftravelers.github.io/" > <img src = "../../Res:Images/Transparent-icon.png" width="100" height="100"></a>
+                                        <a class="btn badge-pill" href = "../restaurantv2/restaurantv2.html"> Home</a> &nbsp;
+                                        <a class="btn badge-pill" href = "../restaurantv2/menuv2.html"> Menu</a> &nbsp;
+                                        <a class="btn badge-pill" href = "../restaurantv2/contactv2.html">Contact</a> &nbsp;
+                                </li>
+                                </ul>
+                </nav>
+
+        <hr style="width: 100%; border: 2px solid #7E3D1E;" />
+        
+<section>
+        <form action = "submit.html" method = "POST" onsubmit = "return(validate());">
+                <label for = "Name">Name:</label> <br/>
+                <input type = "text" id="Name" name = "Name"> <br/>
+                <label for = "Email"> Email:</label> <br/>
+                <input type = "text" id="Email" name = "Email"> <br/>
+                <label for = "phone"> Phone Number:</label> <br/>
+                <input type = "text" id="phone" name = "phone"> <br/>
+        
+        
+        <label for="contact">Reason for Inquiry:</label><br />
+	        <select id="contact" name="contact">
+    	        <option value="default" selected>--Catering--</option>
+    	        <option value="Private party">Private party</option>
+    	        <option value="feed back">Feed Back</option>
+    	        <option value="other">Other</option>
+            </select>
+</section>
+<section>
+            <label for="info">Additional Information</label><br />
+                <textarea id="info" name="info"></textarea> <br/>
+                <input type="submit" name="submit" value="Submit">
+</section>
+<section>
+                <legend>Have you been to the restautant?</legend>
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">Yes</label>
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">No</label>
+                
+</section>
+<section>
+        <legend>Best days to contact you.</legend>
+        <form action="/action_page.php">
+            <input type="checkbox" id="day1" name="day1" value="Monday">
+            <label for="vehicle1"> Mon</label>
+            <input type="checkbox" id="day2" name="day2" value="Tuesday">
+            <label for="vehicle2"> Tue</label>
+            <input type="checkbox" id="day3" name="day3" value="Wednesday">
+            <label for="vehicle1"> Wed</label>
+            <input type="checkbox" id="day4" name="day4" value="Thursday">
+            <label for="vehicle2"> Thu</label>
+            <input type="checkbox" id="day5" name="day5" value="friday">
+            <label for="vehicle1"> Fri</label>
+            <input type="checkbox" id="day6" name="day6" value="Saturday">
+            <label for="vehicle2"> Sat</label>
+            <input type="checkbox" id="day7" name="day7" value="Sunday">
+            <label for="vehicle3"> Sun</label>
+            <input type="submit" value="Submit">
+          </form>
+</section>
+
+        </div>
+</div>
+
+<hr style="width: 100%; border: 2px solid #7E3D1E;" />
+    <footer>
+
+        <p>123 Smile Ave, WA, 12345</p>
+        <P>Phone # 123-456-7890</P>
+    </footer>
+    <hr style="width: 100%; border: 2px solid #7E3D1E;" />
+    </main>
+    <script src = "restaurant.js"></script>
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

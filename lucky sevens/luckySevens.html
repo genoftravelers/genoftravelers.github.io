@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous">
+    <title>lucky Sevens</title>
+
+    <style>
+      .container{
+          width:100%;
+          background-color:lightgoldenrodyellow;
+          font-family:fantasy;
+          text-align: center; 
+      }
+      table{
+          width:75%;
+          margin:auto;
+          
+      }
+      .table-hover tbody tr:hover td {
+    background: forestgreen;
+}
+    
+      #pressPlay{
+          background-color:forestgreen;
+          color:White;
+      }
+      
+    </style>
+</head>
+
+<body>
+        <div class = "container">
+                <h1> Lucky Sevens 🍀 </h1>
+    
+                <form name = "giveAbet" class = "needs-validation" onclick = "return validate();" novalidate>
+                    <div class = "form-row">
+                        <lable class = "col-3" for = "startBet">Starting Bet</lable>
+                        <input class = "col-3 form-control" type = "number" id = "startBet" name = "startBet" placeholder = "$0.00" required>
+                        <div class = "col-6 text-left invalid-feedback">
+                            Try Another Number greater than zero
+                        </div>
+                    </div> 
+                    <!--------------------------end of giveAbet form-------------------------------------------------------------->
+                    
+                    <div class = "form-row">
+                        <div class = "col-3"></div>
+                        <button id = "pressPlay" type = "submit" class = "btn btn-outline-secondary col-2">
+                            Bet
+                        </button>
+                    </div> 
+                </form>
+                <!--------------------------end of giveAbet form-row-------------------------------------------------------------->
+    
+                <!--results-->
+                
+                <section id = "results" class = "col-5" style = "display: none;">
+                    <table class="table table-hover">
+                        <tr >
+                            <td>Starting Bet</td>
+                            <td>$<span id = showStartBet></span></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Total Rolls Before Going Broke</td>
+                            <td><span id = showAllRolls></span></td>
+                        </tr>
+    
+                        <tr>
+                            <td>Highest Amount Won</td>
+                            <td>$<span id = showHighestAmountWon></span></td>
+                        </tr>
+    
+                        <tr>
+                            <td>Roll Count at Highest Amount Won</td>
+                            <td><span id = showRollCountAtHightestAmountWon></span></td>
+                        </tr>
+                    </table>
+                </section>
+        </div> 
+    
+    
+    
+
+    <script src = "luckySevens.js"></script>
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin = "anonymous"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin = "anonymous"></script>
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin = "anonymous"></script>
+</body>
+</html>
