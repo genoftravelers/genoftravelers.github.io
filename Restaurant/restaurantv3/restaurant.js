@@ -1,34 +1,19 @@
 function validate() {
-      
-    if( document.myForm.Name.value == "" ) {
-       alert( "Please provide your name!" );
-       document.myForm.Name.focus() ;
-       return false;
-    }
-    if( document.myForm.EMail.value == "" ) {
-       alert( "Please provide your Email!" );
-       document.myForm.EMail.focus() ;
-       return false;
-    }
-    if( document.myForm.phone.value == "" || isNaN( document.myForm.Zip.value ) ||
-       document.myForm.phone.value.length != 7 ) {
-       
-       alert( "Please provide a phone number with no space" );
-       document.myForm.phone.focus() ;
-       return false;
-    }
-    
-    return( true );
- }
- function validateEmail() {
-    var emailID = document.myForm.EMail.value;
-    atpos = emailID.indexOf("@");
-    dotpos = emailID.lastIndexOf(".");
-    
-    if (atpos < 1 || ( dotpos - atpos < 2 )) {
-       alert("Please enter correct email ID")
-       document.myForm.EMail.focus() ;
-       return false;
-    }
-    return( true );
- }
+   
+   
+   let name = document.getElementById("Name").value; 
+   let email = document.getElementById("Email").value;
+   let phoneNum = document.getElementById("phone").value;
+
+   console.log(name); 
+
+   if(name===""){
+      alert("Please Enter your name.");
+   }
+   if(email===""){
+      alert("Please Enter your email correctly");
+   }
+   if(phoneNum===""){
+      alert("Please Enter your phone number");
+   } 
+}
